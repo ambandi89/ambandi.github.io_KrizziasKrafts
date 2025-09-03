@@ -21,8 +21,8 @@ body {
 		env(safe-area-inset-left);
 }
 .off-screen-menu {
-   background-color: rgb(223, 200, 220);
-   opacity: .9; 
+   background-color: #5e5d5d;
+   opacity: .95; 
    height: 100vh;
    width: 100%;
    max-width: 450px;
@@ -112,7 +112,7 @@ li a {
     text-decoration: none;
     display: block;
     font-weight: 600;
-    color: #5e5d5d;
+    color: white;
     position: relative;
     z-index: 1;   
 }
@@ -159,28 +159,214 @@ h1 {
 .main-about {
     background-color: white;
     margin: 30px;
+    padding: 20px;
 }
 .main-about h2 {
     text-align: center;
     font-family: "Eczar", sans-serif;
     font-size: 24px;
     color:#5e5d5d;
+    padding-bottom: 10px;
 }
 .main-about p {
     font-family: "Eczar", sans-serif;
     color: #5e5d5d;
     font-size: 16px;
 }
+.main-about img {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin: 20px auto;
+} 
+.main-about button {
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 50px;
+    background-color: #5e5d5d;
+    padding: 10px 20px;
+}
+.main-about button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
 img {
     height: 50px;
     width: auto;
     display: block;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
+    margin: 20px auto;
 }
 /* .main-about {
     background: linear-gradient(rgba(223,200,220, .85), rgba(223,200,220, .65)),
 					url(img/desktop-1985856_1280.jpg) center center / cover;
     height: 600px;
 } */
+.gallery h2 {    
+    text-align: center;
+    font-family: "Eczar", sans-serif;
+    font-size: 24px;
+    color:#5e5d5d;
+    padding-bottom: 10px;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  background: #00AFEF;
+  min-height: 100px;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer img {
+    margin: auto;
+    height: 110px;
+    width: 85px;
+}
+.social-icon,
+.menu-socials {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+.social-icon li {
+    padding: 0px 5px;
+}
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+.position-relative {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 15vh;
+}
+.custom-shape-divider-bottom-1756927892 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1756927892 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-bottom-1756927892 .shape-fill {
+    fill: #00AFEF;
+}
+
+.footer p {
+    display: flex;
+}
+.bx-heart-circle {
+    align-items: baseline;
+    color: black;
+}
+i {
+    font-size: 2em;
+}
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1756927892 svg {
+        width: calc(100% + 1.3px);
+        height: 55px;
+    }
+}
