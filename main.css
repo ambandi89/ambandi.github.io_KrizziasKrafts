@@ -191,6 +191,7 @@ h1 {
     font-family: "Eczar", sans-serif;
     color: #5e5d5d;
     font-size: 16px;
+    max-width: 750px;
 }
 .main-about img {
     height: 100px;
@@ -228,12 +229,16 @@ h1 {
 					url(img/desktop-1985856_1280.jpg) center center / cover;
     height: 600px;
 } */
+.gallery {
+  margin: auto;
+  width: auto;
+}
 .gallery h2 {    
     text-align: center;
     font-family: "Eczar", sans-serif;
     font-size: 24px;
     color:#5e5d5d;
-    margin: 80px auto;
+    margin: 40px auto;
 }
 .footer {
   position: relative;
@@ -389,7 +394,6 @@ i {
     font-size: 2em;
 }
 .card-wrapper {
-  max-width: 1100px;
   margin: 0 60px 35px;
   padding: 20px 10px;
   overflow: hidden;
@@ -433,7 +437,7 @@ i {
   border-radius: 50px;
   font-weight: 500;
   background: #DDE4FF;
-  margin: 16px 0 18px;
+  margin: 16px auto;
 }
 
 .card-list .card-link .badge-designer {
