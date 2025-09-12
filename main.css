@@ -9,7 +9,7 @@ html {
 	text-size-adjust: 100%;
 }
 body {
-    background-image: url(img/kiwihug-zGZYQQVmXw0-unsplash.jpg);
+  background-image: url(img/kiwihug-zGZYQQVmXw0-unsplash.jpg);
 	margin: auto;
 	font-family: "Volkhov", serif;
 	line-height: 1.75;
@@ -685,6 +685,14 @@ h3 img {
       margin: auto;
       font-size: 20px;
     }
+    .image-gallery {
+      display: flex;
+      flex-direction: row;
+    }
+    .flip-card-section {
+      display: flex;
+      flex-direction: row;
+    }
 }
 @media (min-width:1001px) {
     body {
@@ -741,5 +749,13 @@ h3 img {
     .main-about p img {
       height: 250px;
       margin: 10px;
+    }
+    .image-gallery {
+      display: flex;
+      flex-direction: row;
+    }
+    .flip-card-section {
+      display: flex;
+      flex-direction: row;
     }
 }
