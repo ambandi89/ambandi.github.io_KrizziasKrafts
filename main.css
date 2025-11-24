@@ -162,7 +162,7 @@ h1 {
   /* transform: rotate(15deg); */
   position: relative;
   top: 0px;
-  right: -14px;
+  right: 0px;
   animation: turnLeft 10s ease-in-out infinite alternate;
   z-index: 0;
   display: flex;
