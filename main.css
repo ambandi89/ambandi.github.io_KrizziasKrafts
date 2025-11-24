@@ -644,11 +644,11 @@ i {
   background: #fff;
   padding: 18px;
   user-select: none;
-  border-radius: 12px;
   text-decoration: none;
   border: 2px solid transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
   transition: 0.2s ease;
+  border: 9px dotted #279AF1;
 }
 
 .card-list .card-item .card-link:active {
@@ -717,14 +717,14 @@ i {
 
 .card-list .card-link:hover .card-button {
   color: #fff;
-  background: #5372F0;
+  background: #279af1;
 }
 
 .card-wrapper .swiper-pagination-bullet {
   height: 13px;
   width: 13px;
   opacity: 0.5;
-  background: #5372F0;
+  background: #279af1;
 }
 
 .card-wrapper .swiper-pagination-bullet-active {
