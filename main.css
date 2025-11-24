@@ -132,11 +132,65 @@ h1 {
     text-align: center;
     margin: 35px;
     margin-bottom: 0;
+    z-index: 1;
+    position: relative;
+}
+.hero h1 {
+    font-size: 8.5vh;
+    text-align: center;
+    color: #f79ad3;
+    font-family: "eczar", cursive;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 12px 7px 2px #8e518d, 0px 0px 5px black;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+
+.glitter-container {
+  height: 45vh;
+  width: auto;
+  background: url(img/Glitterstars.png);
+  position: relative;
+}
+.rotated-image1 {
+  width: auto;
+  height: 2vh;
+  object-fit: cover;
+  opacity: 0.8;
+  /* transform: rotate(15deg); */
+  position: relative;
+  top: 0px;
+  right: -14px;
+  animation: turnLeft 10s ease-in-out infinite alternate;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotated-image1 img {
+  height: 25vh;
+  width: auto;
+}
+
+/* @keyframes turnLeft {
+  from {
+    transform: rotate(15deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+} */
+#glitter {
+  height: 27vh;
+  width: auto;
 }
 .hero {
     max-width: 100%;
     display: block;
-    height: 700px;
+    height: 60vh;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -146,11 +200,12 @@ h1 {
     margin: auto;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(180deg, #9e9c9c,#5e5d5d);
+    background: linear-gradient(180deg, #d7c0d0,#f7c7db);
     padding: 10px 20px;
     margin-top: 35px;
     margin-bottom: 15px;
     position: relative;
+    top: 265px;
 }
 .hero button a {
     text-decoration: none;
@@ -176,12 +231,23 @@ h1 {
   margin: auto;
   margin-bottom: 25px;
 }
+#glitter2 {
+  display: flex;
+  position: relative;
+  top: -45px;
+  right: 20px;
+  height: 15vh;
+}
+.stars-container {
+  display: flex;
+}
 .main-about {
     background-color: white;
     margin: 40px 30px;
     padding: 20px;
     display: flow-root;
     height: auto;
+    border: 18px groove #f7c7db;
 }
 .main-about h2 {
     text-align: center;
@@ -189,6 +255,8 @@ h1 {
     font-size: 24px;
     color:#5e5d5d;
     padding-bottom: 10px;
+    padding-right: 70px;
+    margin: 0px;
 }
 .main-about p {
     font-family: "Eczar", sans-serif;
@@ -362,7 +430,7 @@ h1 {
     position: relative;
     margin: 0;
     padding: 0;
-    min-height: 15vh;
+    top: 10px;
     margin-top: 70px;
 }
 .custom-shape-divider-bottom-1756927892 {
