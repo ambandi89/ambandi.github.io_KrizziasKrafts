@@ -394,6 +394,37 @@ button:hover .star-6 {
   margin: auto;
   margin-bottom: 25px;
 }
+
+.scroll-container {
+  width: 100%; /* Or a specific width */
+  overflow: hidden; /* Hides the overflowing text */
+  white-space: nowrap; /* Prevents text from wrapping */
+  position: relative; /* Needed for absolute positioning of the text */
+  height: 50px; /* Example height for the banner */
+  background-color: #d7c0d0; /* Example background */
+}
+
+.scrolling-text {
+  position: absolute;
+  top: 0;
+  left: 100%; /* Start off-screen to the right */
+  animation: scroll-left 50s linear infinite; /* Apply the animation */
+  margin: 0; /* Remove default paragraph margin */
+  line-height: 50px; /* Vertically center the text */
+  color: #070600; /* Example text color */
+  font-family: "eczar", cursive;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0); /* Starting position (off-screen right) */
+  }
+  100% {
+    transform: translateX(-100%); /* Ending position (off-screen left) */
+  }
+}
+
+
 #glitter2 {
   display: flex;
   position: relative;
@@ -474,6 +505,13 @@ button:hover .star-6 {
 					url(img/desktop-1985856_1280.jpg) center center / cover;
     height: 600px;
 } */
+.separator {
+  background-image: url(img/Glitterseparator.png);
+  background-repeat: repeat-x;
+  height: 13vh;
+  width: auto;
+}
+
 .gallery {
   margin: auto;
   width: auto;
