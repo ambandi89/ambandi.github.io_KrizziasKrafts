@@ -408,11 +408,12 @@ button:hover .star-6 {
   position: absolute;
   top: 0;
   left: 100%; /* Start off-screen to the right */
-  animation: scroll-left 50s linear infinite; /* Apply the animation */
+  animation: scroll-left 150s linear infinite; /* Apply the animation */
   margin: 0; /* Remove default paragraph margin */
   line-height: 50px; /* Vertically center the text */
   color: #070600; /* Example text color */
   font-family: "eczar", cursive;
+  font-size: 2vh;
 }
 
 @keyframes scroll-left {
@@ -476,12 +477,8 @@ button:hover .star-6 {
     right: -25px;
 }
 .main-about button {
-    display: block;
-    margin: auto;
-    border: none;
-    border-radius: 50px;
-    background: linear-gradient(180deg, #9e9c9c,#5e5d5d);
-    padding: 10px 20px;
+    position: relative;
+    top: 0px;
 }
 .main-about button a {
     text-decoration: none;
@@ -508,7 +505,7 @@ button:hover .star-6 {
 .separator {
   background-image: url(img/Glitterseparator.png);
   background-repeat: repeat-x;
-  height: 45vh;
+  height: 13vh;
   width: auto;
 }
 
