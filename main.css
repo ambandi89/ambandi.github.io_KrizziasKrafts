@@ -457,7 +457,7 @@ button:hover .star-6 {
     text-align: center;
     font-family: "Eczar", sans-serif;
     font-size: 5vw;
-    color:#5e5d5d;
+    color: black;
     padding-bottom: 10px;
     padding-right: 40px;
     margin: auto;
@@ -465,14 +465,15 @@ button:hover .star-6 {
 }
 .main-about p {
     font-family: "Eczar", sans-serif;
-    color: #5e5d5d;
+    color: black;
     font-size: 16px;
     max-width: 750px;
 }
 .main-about img {
-    height: 10vh;
+    height: 3vh;
     width: auto;
-    margin: 20px auto;
+    margin: auto;
+    
 } 
 #glitter1 {
     height: 4vh;
@@ -520,9 +521,10 @@ button:hover .star-6 {
 .gallery h2 {    
     text-align: center;
     font-family: "Eczar", sans-serif;
-    font-size: 24px;
-    color:#5e5d5d;
-    margin: 40px auto;
+    font-size: 5vh;
+    color: black;
+    margin: 35px auto;
+    margin-bottom: 0px;
 }
 .footer {
   position: relative;
@@ -701,7 +703,7 @@ i {
   border: 2px solid transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
   transition: 0.2s ease;
-  border: 9px dotted #279AF1;
+  border: 3px solid #279AF1;
 }
 
 .card-list .card-item .card-link:active {
@@ -798,15 +800,17 @@ h2 {
 }
 h3 {
   text-align: center;
-  color: #5e5d5d;
-  margin: 0px 25px 50px;
+  color: black;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 2vh;
 }
 h3 img {
   height: 20px;
   width: 20px;
   align-items: baseline;
   position: relative;
-  top: 4px;
+  top: 8px;
 }
 .image-gallery img {
   border: solid #5e5d5d;
@@ -954,7 +958,7 @@ h3 img {
         padding: 0;
     }
     .off-screen-menu ul li a {
-        color: #5e5d5d;
+        color: black;
     }
     .hero {
       margin: 90px;
