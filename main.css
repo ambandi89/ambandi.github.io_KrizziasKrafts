@@ -510,13 +510,14 @@ button:hover .star-6 {
 .separator {
   background-image: url(img/Glitterseparator.png);
   background-repeat: repeat-x;
-  height: 13vh;
+  height: 5.5vh;
   width: auto;
 }
 
 .gallery {
   margin: auto;
   width: auto;
+  height: 100vh;
 }
 .gallery h2 {    
     text-align: center;
@@ -526,6 +527,78 @@ button:hover .star-6 {
     margin: 35px auto;
     margin-bottom: 0px;
 }
+.subscribe-home {
+  position: relative;
+  height: 50vh;
+}
+
+.subscribe-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 55vh;
+  width: auto;
+  background: url(img/krizziaskraftspattern.png) center / contain;
+  background-repeat: repeat;
+  background-size: 200px 150px;
+  opacity: 0.5;
+  z-index: -1;
+}
+.subscribe-home h2 {
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 0px;
+  font-size: 4vh;
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+
+.subscribe-home form {
+   background: white;
+   display: flex;
+   width: fit-content;
+   max-width: 100%;
+   margin: auto;
+   margin-top: 50px;
+}
+button img {
+  display: block;
+  margin: auto;
+  height: 3vh;
+  width: auto;
+}
+
+form input {
+  border: 0;
+  outline: none;
+  padding: 10px 20px;
+  height: 70px;
+  width: 50vw;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.subscribe-home form button {
+  background-color: #8e518d;
+  border: none;
+  outline: none;
+  height: 70px;
+  max-width: 100%;
+  cursor: pointer;
+  top: 0px;
+  border-radius: 0px;
+}
+.subscribe-home button:hover {
+	background-color: gray;
+}
+#msg {
+  display: flex;
+  justify-content: center;
+}
+
 .footer {
   position: relative;
   width: 100%;
@@ -643,7 +716,6 @@ button:hover .star-6 {
 .wave-divider {
   position: relative;
   width: 100%;
-  margin-top: 70px;
   line-height: 0;
 }
 
@@ -653,7 +725,7 @@ button:hover .star-6 {
   height: 80px;
 }
 
-.custom-shape-divider-bottom-1756927892 {
+/* .custom-shape-divider-bottom-1756927892 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -672,7 +744,7 @@ button:hover .star-6 {
 
 .custom-shape-divider-bottom-1756927892 .shape-fill {
     fill: #e999c4;
-}
+} */
 
 .footer p {
     display: flex;
