@@ -21,7 +21,7 @@ body {
 		env(safe-area-inset-left);
 }
 .off-screen-menu {
-   background-color: #5e5d5d;
+   background-color: black;
    opacity: .95; 
    height: 100vh;
    width: 100%;
@@ -57,7 +57,7 @@ nav {
 .ham-menu span {
   height: 5px;
   width: 100%;
-  background-color: #5e5d5d;
+  background-color: black;
   border-radius: 25px;
   position: absolute;
   top: 50%;
@@ -189,13 +189,16 @@ h1 {
   }
 } */
 #glitter {
-  height: 20vh;
+  height: 27vh;
   width: auto;
+  margin: 25px auto;
+  position: relative;
+  top: 90px;
 }
 .hero {
     max-width: 100%;
     display: block;
-    height: 55vh;
+    height: 75vh;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -230,7 +233,7 @@ button {
     background: #f79ad3;
     font-size: 17px;
     font-weight: 500;
-    color: white;
+    color: black;
     text-transform: uppercase;
     border: 3px solid #f79ad3;
     border-radius: 8px;
@@ -386,13 +389,12 @@ button:hover .star-6 {
     margin-bottom: 30px;
 }
 .hero img {
-  height: 100px;
+  height: 25vh;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  margin-bottom: 25px;
+  margin: 25px auto;
 }
 
 .scroll-container {
@@ -429,23 +431,26 @@ button:hover .star-6 {
 #glitter2 {
   display: flex;
   position: relative;
-  top: -35px;
+  top: -50px;
   right: 15px;
   height: 7vh;
 }
 .stars-container {
-  display: flex;
-  position: relative;
+  display: block;
+  margin: 30px auto;
 }
 #cricut {
-  padding-left: 30px;
+  display: block;
+  margin: auto;
+  height: 20vh;
+  width: auto;
 }
 .main-about {
     background-color: white;
     margin: 40px 30px;
     padding: 20px;
     display: flow-root;
-    height: 80vh;
+    height: 120vh;
     border: 18px groove #f7c7db;
 }
 .main-about h2 {
@@ -473,8 +478,7 @@ button:hover .star-6 {
     height: 4vh;
     width: auto;
     position: relative;
-    top: -35px;
-    right: -25px;
+    float: right;
 }
 .main-about button {
     position: relative;
@@ -483,9 +487,9 @@ button:hover .star-6 {
 .main-about button a {
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
-    font-weight: 600;
-    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
 }
 .main-about p img {
   float: left;
@@ -533,8 +537,8 @@ button:hover .star-6 {
 }
 .footer img {
     margin: auto;
-    height: 110px;
-    width: 85px;
+    height: 15vh;
+    width: auto;
 }
 .social-icon,
 .menu-socials {
@@ -580,13 +584,12 @@ button:hover .star-6 {
 .menu__link:hover {
   opacity: 1;
 }
-.wave {
+/* .wave {
   position: absolute;
   top: -100px;
   left: 0;
   width: 100%;
   height: 100px;
-  background: url("https://i.ibb.co/wQZVxxk/wave.png");
   background-size: 1000px 100px;
 }
 
@@ -616,7 +619,7 @@ button:hover .star-6 {
   opacity: 0.7;
   bottom: 20px;
   animation: animate 3s linear infinite;
-}
+} */
 
 @keyframes animateWaves {
   0% {
@@ -635,13 +638,19 @@ button:hover .star-6 {
     background-positon-x: 0px;
   }
 }
-.position-relative {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    top: 10px;
-    margin-top: 70px;
+.wave-divider {
+  position: relative;
+  width: 100%;
+  margin-top: 70px;
+  line-height: 0;
 }
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
 .custom-shape-divider-bottom-1756927892 {
     position: absolute;
     bottom: 0;
@@ -906,10 +915,9 @@ h3 img {
 }
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .custom-shape-divider-bottom-1756927892 svg {
-        width: calc(100% + 1.3px);
-        height: 55px;
-    }
+  .wave-divider svg {
+    height: 50px;
+  }
 }
 
 @media (min-width:786px) and (max-width:1000px) {
