@@ -198,7 +198,7 @@ h1 {
 .hero {
     max-width: 100%;
     display: block;
-    height: 75vh;
+    height: 70vh;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -785,7 +785,7 @@ i {
 }
 
 .card-wrapper .swiper-slide-button {
-  color: #5372F0;
+  color: black;
   margin-top: -35px;
 }
 
@@ -909,9 +909,9 @@ h3 img {
     margin: 0 10px 25px;
   }
 
-  .card-wrapper .swiper-slide-button {
+  /* .card-wrapper .swiper-slide-button {
     display: none;
-  }
+  } */
 }
 /** For mobile devices **/
 @media (max-width: 767px) {
