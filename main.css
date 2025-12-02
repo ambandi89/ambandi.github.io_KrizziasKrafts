@@ -507,6 +507,17 @@ button:hover .star-6 {
 					url(img/desktop-1985856_1280.jpg) center center / cover;
     height: 600px;
 } */
+
+.stars-separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto;
+}
+.stars-separator img {
+  height: 6vh;
+  width: auto;
+}
 .separator {
   background-image: url(img/Glitterseparator.png);
   background-repeat: repeat-x;
@@ -517,7 +528,7 @@ button:hover .star-6 {
 .gallery {
   margin: auto;
   width: auto;
-  height: 100vh;
+  height: 80vh;
 }
 .gallery h2 {    
     text-align: center;
@@ -549,9 +560,11 @@ button:hover .star-6 {
   text-align: center;
   padding: 50px;
   padding-bottom: 0px;
-  font-size: 4vh;
   position: relative;
   z-index: 1;
+  text-align: center;
+  font-family: "Eczar", sans-serif;
+  font-size: 5vh;
   color: black;
 }
 
