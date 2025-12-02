@@ -476,7 +476,7 @@ button:hover .star-6 {
     
 } 
 #glitter1 {
-    height: 4vh;
+    height: 2.5vh;
     width: auto;
     position: relative;
     float: right;
@@ -730,6 +730,7 @@ form input {
   position: relative;
   width: 100%;
   line-height: 0;
+  border-image: url(img/Glitterseparator.png);
 }
 
 .wave-divider svg {
