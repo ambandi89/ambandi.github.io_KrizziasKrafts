@@ -450,7 +450,7 @@ button:hover .star-6 {
     margin: 40px 30px;
     padding: 20px;
     display: flow-root;
-    height: 120vh;
+    height: 115vh;
     border: 18px groove #f7c7db;
 }
 .main-about h2 {
@@ -889,6 +889,7 @@ h3 {
   margin: auto;
   margin-top: 40px;
   font-size: 1.75vh;
+  font-family: "Eczar", sans-serif;
 }
 h3 img {
   height: 20px;
